@@ -1,0 +1,8 @@
+create an Ec2 instance by using script for hosting
+by using mobaxtream configure aws 
+ yum install nginx -y
+ cd /var/www/html/
+ vim index.html
+ vim index.html
+page will be host by nginx.
+65.2.184.103
