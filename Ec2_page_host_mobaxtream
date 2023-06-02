@@ -1,0 +1,11 @@
+fristly we have to launch an instance by script
+#!/bin/bash
+sudo yum update -y
+sudo yum install httpd -y
+echo "<html><body><center><h1>Hello Techie! Have a Nice Day.</h1></center></body></html>">/var/www/html/index.html
+sudo systemctl start httpd
+sudo systemctl enable httpd
+after that when instance get launch host a public ip in your google tab page will be host
+now go to mobaxtream ssh get into by access key and configure aws 
+curl localhost 
+your page will be host on mobaxtream.
