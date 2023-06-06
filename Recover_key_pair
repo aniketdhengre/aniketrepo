@@ -1,0 +1,17 @@
+create two instances with_key1 and key_recovery1 
+Delete the key and stopped the instance with_key1
+now in voume tab detache the instance with_key1 let it be in availabe state
+now attached this volume to our recovery server wait till its get attached 
+now log in to the server key_recovery1 
+sudo -i 
+now we have to cheack our disk is attached to the server or not by command lsblk
+now to mount this we have to create and directory in /mnt by name volume1 
+mount -o nouuid /dev/xvdf1 /mnt/volume1 
+df -h
+cd /home/ec2-user/.ssh
+ls
+cat authorized_keys >> /mnt/volume1/home/ec2-user/.ssh/authorized_key 
+now we have to unmount umount /mnt/volume1
+now stopped the key_recovery instance as well because we have to dettached the volume
+now attached it back to the main server with a name /dev/xvda
+now start the server with_key1 and loginto it now we are able to access the server.
