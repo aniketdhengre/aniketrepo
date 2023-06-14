@@ -1,0 +1,19 @@
+create an instance "EBS_mount" then got to volume attach to the instance.
+connect your instance by taking ssh
+log in as root user 
+type lsblk so we can see attachede block devices we can able to see our device by name xvda1 
+now create mount directory  mkdir /tmp/anddy
+to begain with partition type fdisk /dev/xvdf
+type m and hit enter for help
+type n to create new partition, type p for new partition , hit enter for default partion enter twice for default, and enter W for accepting changes
+now enter "partprob" command to inform the kernal about the partion changes
+mkfs.xfs /dev/xvdf1
+you can cheak formated partion by lsblk -fs
+now mount /dev/xvdf1 /tmp/anddy
+lsblk -fs
+now make the mount point persistance by Vim /etc/fastab
+enter at the very last by "/dev/xvdf1 /temp/anddy xfs default 0 0 and save
+df -h
+mount -a 
+and cheak  by lsblk -fs
+now we can seee the partion is mounted.
