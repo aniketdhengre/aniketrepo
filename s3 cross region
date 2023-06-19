@@ -1,0 +1,6 @@
+create primary bucket cross121 and make sure to enable the versioning.
+create replica bucket in another region.
+Navigate to Management tab, scroll down to Replication rules section and click Create replication rule
+now give the replication name 
+choose the source and the destination and create 
+your s3 cross replication will be created.
