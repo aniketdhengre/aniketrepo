@@ -1,0 +1,11 @@
+create an instance 
+while creating instance in user data write the following script 
+#!/bin/bash
+sudo yum update -y
+sudo yum install httpd -y
+sudo mkdir -p /var/www/html/mobile
+sudo systemctl start httpd 
+sudo systemctl enable httpd 
+sudo echo "<h1> this is my home "$HOSTNAME",</h1>">/var/www/html/mobile/index.html
+and launch instance 
+now you cheak by public ip.
