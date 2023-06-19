@@ -1,0 +1,5 @@
+launch an ec2 instance
+go to actions select image and template create image
+now go to ami wait till active
+now go to launch template
+select the ami and subnet and launch the template.
