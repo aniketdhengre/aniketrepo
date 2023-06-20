@@ -1,0 +1,5 @@
+create s3 bucket and make sure to enable ACl and all public access bucket versioning enable.
+now get any free css tamplet from web and extract it.
+now upload all extracted file on s3 bucket grant public access and upload.
+now in properties static web hosting enable and save,
+now copy url cheak on web your website successfully host.
