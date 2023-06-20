@@ -1,0 +1,7 @@
+Go to S3
+Click Create bucket  now Goto policies in IAM service
+Click Create policy for S3_read_write_permission elect s3 ,Access level : Read and Write permission ,in resources : click add Arn ,paste bucket name ,click add arn , Next , Policy name : S3_read_write_permission ,Click create policy
+Create policy for (S3_readonly_permission), select s3 , Access level : Read permission , in resources : click add Arn , paste bucket name , click add arn , Policy name: S3_readonly_permission > Cick create policy
+Select Users > click add users > user1 > next > select attach policy directly > click all types > select customer managed > select S3_read_write_permission > Next > Create user > Next > download .csv file
+Select Users > click add users > user2 > next > select attach policy directly > click all types > select customer managed > select S3_readonly_permission > Next > Create user > Next > download .csv file
+here, we have created the 2 users and S3 bucket and gave read and write permission to user1 and read only permission to user2.
