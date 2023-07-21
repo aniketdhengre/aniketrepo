@@ -1,0 +1,21 @@
+Create LAMP server (Apache)
+launch an ec2 instance select ami image 2 and allow http anywhere 
+now take a ssh i use mobaxtream
+now use following commands
+yum update -y
+yum install httpd 
+yum install mariadb mariadb-server
+yum install php php-mysql
+systemctl start mariadb 
+systemctl enable mariadb
+mysql_secure_installation
+give password and y y y y 
+systemctl start httpd 
+systemctl enable httpd
+cd /var/www/html
+vim /index.php 
+<?php
+phpinfo();
+?>
+wq!
+now hit the public ip page will be located.
