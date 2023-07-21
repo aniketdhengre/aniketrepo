@@ -1,0 +1,20 @@
+ create instance by using linux vol-2 image
+2. after instance launch go to moba extreme
+3. take ssh
+yum update -y 
+yum install nginx by 
+sudo amazon-linux-extras install nginx1 -y
+sudo systemctl start nginx
+sudo systemctl enable nginx
+make bucket first
+aws configure
+use accesskey and secrate key
+aws s3 ls ......show bucket
+vim file name 
+<h1>
+    hello world
+  </h1>
+  cat <file name> > /usr/share/nginx/html/index.html
+  curl localhost
+  go to instance put public ip in new tab and show the nginx page 
+  http://52.87.173.191
